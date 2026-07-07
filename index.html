@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuxuan Pang</title>
+<meta name="description" content="Yuxuan Pang — computational social science researcher, developer, and self-taught artist.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div>
+        <div class="name">Yuxuan Pang</div>
+        <div class="role">Researcher &amp; artist</div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#illustration">Illustration</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme">☾ dark</button>
+      <div class="socials">
+        <a href="mailto:pangyuxuan2001@gmail.com">Email</a>
+        <a href="#" id="github-link">GitHub</a>
+        <a href="cv/Yuxuan_Pang_CV.pdf">CV</a>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- ABOUT / HERO -->
+    <section id="about">
+      <div class="hero">
+        <div class="hero-text">
+          <span class="eyebrow">Chicago, IL</span>
+          <h1>I study how people make sense of meaning &amp; uncertainty — and build worlds where they do.</h1>
+          <p class="lede">I'm a graduate researcher at the University of Chicago working across NLP, computational
+            social science, and generative 3D modeling. Outside the lab, I make games, animation, and illustration.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="cv/Yuxuan_Pang_CV.pdf">Download CV</a>
+            <a class="btn" href="#research">See research</a>
+            <a class="btn" href="#illustration">See art</a>
+          </div>
+        </div>
+        <div class="morph-wrap" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <path fill="var(--accent-research)" opacity="0.85">
+              <animate attributeName="d" dur="10s" repeatCount="indefinite"
+                values="
+                  M45,-58C59,-49,70,-34,74,-17C78,0,75,20,64,35C53,50,34,60,13,64C-8,68,-30,66,-46,54C-62,42,-72,20,-72,-2C-72,-24,-62,-46,-45,-58C-28,-70,-14,-72,2,-74C18,-76,31,-67,45,-58Z;
+                  M52,-62C66,-51,74,-33,76,-14C78,5,74,26,62,42C50,58,30,69,8,71C-14,73,-38,66,-53,51C-68,36,-74,13,-71,-9C-68,-31,-56,-52,-38,-63C-20,-74,-4,-75,13,-74C30,-73,38,-73,52,-62Z;
+                  M45,-58C59,-49,70,-34,74,-17C78,0,75,20,64,35C53,50,34,60,13,64C-8,68,-30,66,-46,54C-62,42,-72,20,-72,-2C-72,-24,-62,-46,-45,-58C-28,-70,-14,-72,2,-74C18,-76,31,-67,45,-58Z
+                "/>
+            </path>
+          </svg>
+        </div>
+      </div>
+      <p>I'm currently finishing a Master's in Digital Studies (AI &amp; Language concentration) at the University of
+        Chicago, where my thesis uses NLP and machine learning to study how people talk about meaning, mortality,
+        and uncertainty online. Before that, I studied Economics with minors in Computer Science and Philosophy at
+        Washington University in St. Louis. I'm equally happiest writing a topic model or sculpting a mesh in
+        Blender — this site covers both sides.</p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <span class="eyebrow">Experience</span>
+      <h2>Where I've worked</h2>
+
+      <div class="timeline-item">
+        <div class="when">Feb 2025 — Present</div>
+        <div>
+          <h3>Research Assistant</h3>
+          <span class="org">Human Nature and Development Lab, University of Chicago</span>
+          <ul>
+            <li>Research existential psychology, emotional cognition, and online mental health discourse.</li>
+            <li>Analyze large-scale text datasets from Reddit and Google Books for psychological and emotional patterns.</li>
+            <li>Apply NLP and statistical methods to study anxiety, meaning, mortality, and emotional coping.</li>
+            <li>Support survey research on psychological responses to existential thought and uncertainty.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="when">Jan 2026 — Mar 2026</div>
+        <div>
+          <h3>Teaching Assistant — Statistics Computing with Python</h3>
+          <span class="org">University of Chicago</span>
+          <ul>
+            <li>Assisted in teaching a graduate course on statistical analysis using Python.</li>
+            <li>Guided students through NumPy, Pandas, and Matplotlib for data analysis.</li>
+            <li>Gave feedback on assignments involving statistical modeling and coding.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="when">Dec 2023 — Feb 2024</div>
+        <div>
+          <h3>Front-End Developer Intern</h3>
+          <span class="org">Bank of China, Beijing</span>
+          <ul>
+            <li>Helped develop a JavaScript interface for an internal system managing account and transaction data.</li>
+            <li>Built a transaction lookup interface to visualize international transaction flows.</li>
+            <li>Collaborated with backend engineers to debug API data rendering and improve interface functionality.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <span class="eyebrow">Research</span>
+      <h2>Research &amp; academic work</h2>
+
+      <div class="card">
+        <h3>Existential Cognition: A Computational Analysis of Existential Discourse in Online Communities</h3>
+        <div class="tag-row">
+          <span class="mono">Master's Honors Thesis</span><span class="mono">University of Chicago</span>
+        </div>
+        <p>A large-scale computational study of over 330,000 Reddit comments touching on existential thought,
+          depression, anxiety, and emotional coping.</p>
+        <ul>
+          <li>Applied topic modeling, semantic clustering, and transformer-based language models to surface
+            psychological themes in online discourse.</li>
+          <li>Identified recurring domains: meaning and purpose, mortality awareness, uncertainty, and self-reflection.</li>
+          <li>Combined computational methods with psychological theory to study how people express existential
+            concerns in naturalistic settings.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Latent-Space Shape Morphing with Generative 3D Models</h3>
+        <div class="tag-row">
+          <span class="mono">Independent research</span>
+        </div>
+        <p>An ongoing project building a pure 3D latent-interpolation pipeline between mesh shapes using a
+          generative 3D model's voxel-based latent representation — no image or text conditioning involved.</p>
+        <div class="media-slot">Add a short write-up, GIF, or before/after render of the interpolation sweep here.</div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <span class="eyebrow">Projects</span>
+      <h2>Things I've built</h2>
+
+      <div class="card">
+        <h3>Red Panda's Journey</h3>
+        <div class="tag-row">
+          <span class="mono">Team Lead &amp; Art Director</span><span class="mono">Narrative adventure game</span>
+        </div>
+        <p>Led a 4-person interdisciplinary team through the design and development of a narrative adventure game.</p>
+        <ul>
+          <li>Defined product vision, UX goals, and creative direction across gameplay, environment design, and
+            progression systems.</li>
+          <li>Coordinated designers, artists, and developers to align technical implementation with UX objectives.</li>
+          <li>Iterated on features through playtesting and feedback to improve engagement.</li>
+        </ul>
+        <div class="media-slot">Add a trailer, screenshots, or a link to a demo / itch.io page here.</div>
+      </div>
+
+      <div class="card">
+        <h3>Procedural 3D Animation</h3>
+        <div class="tag-row">
+          <span class="mono">Python</span><span class="mono">Blender</span>
+        </div>
+        <p>A short 3D animation generated entirely through Python code rather than manual keyframing — geometry,
+          motion, and camera work all driven by script.</p>
+        <div class="media-slot">Drop the rendered video/GIF (or a link to it) here, plus a couple sentences on
+          the technique — e.g. what the script controls and what tools it uses.</div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ILLUSTRATION -->
+    <section id="illustration">
+      <span class="eyebrow">Illustration &amp; design</span>
+      <h2>Art</h2>
+      <p>Self-taught illustrator and painter — sketches, digital paintings, and character design work.</p>
+      <div class="gallery">
+        <div class="gallery-tile">Add image</div>
+        <div class="gallery-tile">Add image</div>
+        <div class="gallery-tile">Add image</div>
+        <div class="gallery-tile">Add image</div>
+        <div class="gallery-tile">Add image</div>
+        <div class="gallery-tile">Add image</div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <span class="eyebrow">Skills</span>
+      <h2>Toolbox</h2>
+
+      <div class="skill-group">
+        <span class="mono">Programming</span>
+        <div class="tag-list">
+          <span>Python</span><span>C#</span><span>Java</span><span>JavaScript</span><span>HTML</span>
+          <span>Machine Learning</span><span>NLP</span><span>Deep Learning</span><span>Topic Modeling</span>
+          <span>Data Analysis</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <span class="mono">Research &amp; psychology</span>
+        <div class="tag-list">
+          <span>Psychological Research</span><span>Quantitative Methods</span><span>Survey Research</span>
+          <span>Text Analysis</span><span>Literature Review</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <span class="mono">Tools &amp; software</span>
+        <div class="tag-list">
+          <span>Excel</span><span>Jupyter</span><span>Matplotlib</span><span>STATA</span><span>Unity</span>
+          <span>Blender</span><span>Photoshop</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <span class="mono">Creative &amp; design</span>
+        <div class="tag-list">
+          <span>3D Modeling</span><span>Digital Art</span><span>Animation</span><span>Character Design</span>
+          <span>Illustration</span><span>Painting</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <span class="mono">Languages</span>
+        <div class="tag-list"><span>English</span><span>Mandarin Chinese</span></div>
+      </div>
+    </section>
+
+    <footer class="contact" id="contact">
+      <p>Based in Chicago, IL — <a href="mailto:pangyuxuan2001@gmail.com">pangyuxuan2001@gmail.com</a></p>
+      <p>&copy; <span id="year"></span> Yuxuan Pang</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

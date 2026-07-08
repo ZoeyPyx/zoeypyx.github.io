@@ -508,3 +508,67 @@ footer.contact a {
   font-size: 0.65em;
   padding-left: 1px;
 }
+
+.morph-group {
+  margin-top: 1.4rem;
+  padding-top: 1.1rem;
+  border-top: 1px dashed var(--line);
+}
+.morph-group:first-of-type {
+  border-top: none;
+  margin-top: 1.6rem;
+}
+.morph-label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.morph-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+.morph-grid model-viewer {
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+@media (max-width: 640px) {
+  .morph-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.9rem 0 0.4rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.82rem;
+  color: var(--ink);
+  padding: 0.55rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
+}
+.repo-link:hover {
+  border-color: var(--accent-research);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.repo-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 50%;
+  background: var(--accent-research);
+  color: var(--paper);
+  font-size: 0.7em;
+}

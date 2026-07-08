@@ -527,9 +527,10 @@ footer.contact a {
   grid-template-columns: repeat(4, 1fr);
   gap: 0.6rem;
 }
-.morph-grid model-viewer {
+.morph-grid video {
   width: 100%;
   aspect-ratio: 1;
+  object-fit: cover;
   background: var(--bg);
   border: 1px solid var(--line);
   border-radius: var(--radius);

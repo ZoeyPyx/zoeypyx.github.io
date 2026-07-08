@@ -526,9 +526,13 @@ footer.contact a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.6rem;
+  min-width: 0;
 }
 .morph-grid video {
+  display: block;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   aspect-ratio: 1;
   object-fit: cover;
   background: var(--bg);

@@ -356,7 +356,62 @@ hr.divider {
   background: var(--bg);
 }
 
-/* ---------- illustration gallery ---------- */
+/* ---------- illustration hub (project cards) ---------- */
+.project-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.project-hub-card {
+  display: block;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  color: var(--ink);
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
+}
+.project-hub-card:hover {
+  border-color: var(--accent-creative);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+.project-hub-card .thumb {
+  aspect-ratio: 4/3;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.8rem;
+}
+.project-hub-card .info {
+  padding: 1rem 1.1rem 1.2rem;
+}
+.project-hub-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+.project-hub-card .info p {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+.project-hub-card .info .mono {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+@media (max-width: 640px) {
+  .project-hub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- illustration gallery (legacy, kept for reuse) ---------- */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

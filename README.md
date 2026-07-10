@@ -26,7 +26,7 @@ Search `index.html` for these and swap in real content:
 Drop image files in `assets/` (already created, empty) and reference them like:
 
 ```html
-<img src="assets/your-file.jpg" alt="Description of the piece">
+<img src="assets/your-file.jpg" alt="Description of the piece" />
 ```
 
 For the illustration gallery, replace a tile like this:
@@ -39,7 +39,11 @@ with:
 
 ```html
 <div class="gallery-tile">
-  <img src="assets/illustration-01.jpg" alt="Description" style="width:100%;height:100%;object-fit:cover;border-radius:3px;">
+  <img
+    src="assets/illustration-01.jpg"
+    alt="Description"
+    style="width:100%;height:100%;object-fit:cover;border-radius:3px;"
+  />
 </div>
 ```
 
@@ -49,4 +53,4 @@ Open `index.html` directly in a browser, or use VS Code's "Live Server" extensio
 
 ## Deploy
 
-Push this whole folder to your `yourusername.github.io` repo and enable GitHub Pages (Settings → Pages → Deploy from branch → `main` → `/root`). Live in ~1 minute at `https://yourusername.github.io`.
+Push this whole folder to your `zoeypyx.github.io` repo and enable GitHub Pages (Settings → Pages → Deploy from branch → `main` → `/root`). Live in ~1 minute at `https://zoeypyx.github.io`.

@@ -132,7 +132,9 @@
   background: var(--accent-creative);
 }
 @media (max-width: 640px) {
-  .role-list { grid-template-columns: 1fr; }
+  .role-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------- labeled show-groups (Character / Environment / UI) ---------- */
@@ -152,8 +154,12 @@
   gap: 0.8rem;
   min-width: 0;
 }
-.show-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
-.show-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.show-grid.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.show-grid.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .show-tile {
   aspect-ratio: 4/3;
@@ -183,7 +189,77 @@
 @media (max-width: 640px) {
   .show-grid,
   .show-grid.cols-2,
-  .show-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+  .show-grid.cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- wide single/paired image tiles (airship, map) ---------- */
+.show-tile.wide-4-3 {
+  aspect-ratio: 4/3;
+}
+.show-tile.wide-16-9 {
+  aspect-ratio: 16/9;
+}
+.show-tile.wide-strip {
+  aspect-ratio: 21/6;
+  margin-top: 1.2rem;
+}
+
+figure {
+  margin: 0;
+}
+.tile-caption {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.char-label-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  margin-top: 0.7rem;
+}
+.char-label-row span {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  text-align: center;
+  padding: 0.4rem 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+@media (max-width: 640px) {
+  .char-label-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.region-legend {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.region-legend-item {
+  border-top: 2px solid var(--accent-creative);
+  padding-top: 0.6rem;
+}
+.region-legend-item .mono {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.region-legend-item p {
+  font-size: 0.85rem;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .region-legend {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------- large gallery (final section) ---------- */
@@ -206,7 +282,9 @@
   text-align: center;
 }
 @media (max-width: 640px) {
-  .gallery-large { grid-template-columns: 1fr; }
+  .gallery-large {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------- project footer nav (prev/next project) ---------- */

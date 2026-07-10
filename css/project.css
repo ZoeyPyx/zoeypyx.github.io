@@ -297,3 +297,18 @@ figure {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.85rem;
 }
+
+.show-tile.wide-4-3,
+.show-tile.wide-16-9,
+.show-tile.wide-strip {
+  aspect-ratio: auto;
+  height: auto;
+}
+.show-tile.wide-4-3 img,
+.show-tile.wide-16-9 img,
+.show-tile.wide-strip img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}

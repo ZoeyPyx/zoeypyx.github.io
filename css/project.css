@@ -207,6 +207,9 @@
   object-fit: contain;
   display: block;
 }
+.show-tile.span-2 {
+  grid-column: span 2;
+}
 
 /* ---------- UI showcase: map + icon side by side, dialogue panel spanning below ---------- */
 .ui-showcase {
